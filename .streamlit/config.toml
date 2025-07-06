@@ -1,0 +1,33 @@
+[global]
+# Show the Streamlit menu and toolbar
+showMainMenu = true
+showToolbar = true
+
+[client]
+# Show the toolbar with deploy button
+showToolbar = true
+
+[server]
+# Enable file watching for better development experience
+fileWatcherType = "auto"
+
+[browser]
+# Automatically open browser when running locally
+gatherUsageStats = true
+
+[theme]
+# Force light theme only
+primaryColor = "#8b5cf6"
+backgroundColor = "rgba(255, 255, 255, 0.8)"
+secondaryBackgroundColor = "#f8fafc"
+textColor = "#1e293b"
+font = "sans serif"
+base = "light"
+
+[runner]
+# Enable magic commands
+magicEnabled = true
+
+[logger]
+# Set logging level
+level = "info"
