@@ -229,13 +229,31 @@ body {
     padding: 0 5rem !important;
 }
 
-/* #MainMenu, header, footer {
+@media (max-width: 1024px) {
+    .stMainBlockContainer,
+    .block-container,
+    .st-emotion-cache-zy6yx3,
+    .elbt1zu4 {
+        padding: 0 2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .stMainBlockContainer,
+    .block-container,
+    .st-emotion-cache-zy6yx3,
+    .elbt1zu4 {
+        padding: 0 1rem !important;
+    }
+}
+
+#MainMenu, header, footer {
     visibility: hidden;
 }
 
 .stDeployButton {
     visibility: hidden;
-} */
+}
 
 /* ====== Propalytic Modern Navigation ====== */
 .modern-nav {
