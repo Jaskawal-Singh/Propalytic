@@ -38,7 +38,6 @@ Propalytic/
 ├── src/
 │   ├── app.py                    # Main Streamlit application
 │   ├── components/               # UI components
-│   │   ├── docs_sidebar.py      # Documentation sidebar
 │   │   ├── modern_cards.py      # Modern card components
 │   │   ├── option_menu_navbar.py # Navigation menu
 │   │   ├── prediction_display.py # Prediction display components
@@ -62,17 +61,12 @@ Propalytic/
 │   └── House price.ipynb      # Model development notebook
 ├── .streamlit/                 # Streamlit configuration
 │   └── config.toml            # App configuration
+├── pages/                      # Additional Streamlit pages
 ├── requirements.txt            # Python dependencies
 ├── run_app.bat                # One-click Windows launcher
 └── README.md                  # This file
-```
-│   └── test.csv               # Test dataset
-├── pages/                      # Additional Streamlit pages
-├── requirements.txt            # Python dependencies
-├── run_app.bat                # Windows run script
-└── README.md                  # This file
-```
 
+```
 ## 🎯 Application Features
 
 ### 🏡 Price Prediction
@@ -329,4 +323,4 @@ If you encounter issues:
 ---
 
 **🏠 Built with ❤️ by the Propalytic Team**
-**Professional Real Estate Analytics - Powered by Machine Learning**
+**Real Estate Analytics - Powered by Machine Learning**

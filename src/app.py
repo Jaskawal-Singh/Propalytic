@@ -37,8 +37,8 @@ def configure_page():
         layout="wide",
         initial_sidebar_state="collapsed",
         menu_items={
-            'Get Help': 'https://github.com/your-repo/house-price-predictor',
-            'Report a bug': 'https://github.com/your-repo/house-price-predictor/issues',
+            'Get Help': 'https://github.com/Jaskawal-Singh/Propalytic',
+            'Report a bug': 'https://github.com/Jaskawal-Singh/Propalytic/issues',
             'About': """
             # 🏠 House Price Predictor
             
