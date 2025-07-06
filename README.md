@@ -323,4 +323,4 @@ If you encounter issues:
 ---
 
 **🏠 Built with ❤️ by the Propalytic Team**
-**Professional Real Estate Analytics - Powered by Machine Learning**
+**Real Estate Analytics - Powered by Machine Learning**
