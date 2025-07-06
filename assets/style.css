@@ -229,13 +229,13 @@ body {
     padding: 0 5rem !important;
 }
 
-#MainMenu, header, footer {
+/* #MainMenu, header, footer {
     visibility: hidden;
 }
 
 .stDeployButton {
     visibility: hidden;
-}
+} */
 
 /* ====== Propalytic Modern Navigation ====== */
 .modern-nav {
