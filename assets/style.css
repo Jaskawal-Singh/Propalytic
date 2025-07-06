@@ -397,6 +397,169 @@ body {
     opacity: 0;
 }
 
+/* ====== Responsive Navbar for Streamlit Option Menu ====== */
+
+/* Desktop navbar positioning */
+div[data-testid="stHorizontalBlock"] .stOptionMenu {
+    position: fixed !important;
+    top: 15px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: var(--z-navbar) !important;
+    background: rgba(248, 250, 252, 0.95) !important;
+    backdrop-filter: blur(24px) saturate(180%) !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: var(--radius-2xl) !important;
+    padding: var(--space-sm) !important;
+    box-shadow: var(--shadow-xl) !important;
+    max-width: 90vw !important;
+    width: auto !important;
+    overflow-x: auto !important;
+}
+
+/* Tablet responsive (1024px and below) */
+@media (max-width: 1024px) {
+    div[data-testid="stHorizontalBlock"] .stOptionMenu {
+        top: 10px !important;
+        max-width: 95vw !important;
+        padding: var(--space-xs) !important;
+    }
+    
+    .stOptionMenu .nav-link {
+        font-size: 0.8rem !important;
+        padding: var(--space-sm) var(--space-md) !important;
+        margin: 0 2px !important;
+    }
+}
+
+/* Mobile responsive (768px and below) */
+@media (max-width: 768px) {
+    div[data-testid="stHorizontalBlock"] .stOptionMenu {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        transform: none !important;
+        margin: var(--space-md) 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        background: rgba(248, 250, 252, 0.98) !important;
+        border-radius: var(--radius-xl) !important;
+        padding: var(--space-sm) !important;
+    }
+    
+    .stOptionMenu nav > ul {
+        justify-content: space-around !important;
+        flex-wrap: wrap !important;
+        gap: 4px !important;
+    }
+    
+    .stOptionMenu .nav-link {
+        font-size: 0.75rem !important;
+        padding: var(--space-sm) var(--space-md) !important;
+        margin: 2px !important;
+        border-radius: var(--radius-lg) !important;
+        min-width: 70px !important;
+        text-align: center !important;
+    }
+}
+
+/* Small mobile (480px and below) */
+@media (max-width: 480px) {
+    div[data-testid="stHorizontalBlock"] .stOptionMenu {
+        margin: var(--space-sm) 0 !important;
+        padding: var(--space-xs) !important;
+        background: rgba(248, 250, 252, 1) !important;
+        border-radius: var(--radius-lg) !important;
+    }
+    
+    .stOptionMenu nav > ul {
+        flex-direction: column !important;
+        gap: var(--space-xs) !important;
+        align-items: stretch !important;
+    }
+    
+    .stOptionMenu .nav-link {
+        font-size: 0.9rem !important;
+        padding: var(--space-md) !important;
+        margin: 0 !important;
+        width: 100% !important;
+        text-align: center !important;
+        border-radius: var(--radius-md) !important;
+    }
+}
+
+/* Dark theme responsive adjustments */
+[data-theme="dark"] div[data-testid="stHorizontalBlock"] .stOptionMenu {
+    background: rgba(15, 23, 42, 0.95) !important;
+    border-color: rgba(51, 65, 85, 0.5) !important;
+}
+
+@media (max-width: 768px) {
+    [data-theme="dark"] div[data-testid="stHorizontalBlock"] .stOptionMenu {
+        background: rgba(15, 23, 42, 0.98) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    [data-theme="dark"] div[data-testid="stHorizontalBlock"] .stOptionMenu {
+        background: rgba(15, 23, 42, 1) !important;
+    }
+}
+
+/* Improved hover states for mobile */
+@media (hover: none) {
+    .stOptionMenu .nav-link:hover {
+        transform: none !important;
+        box-shadow: var(--shadow-md) !important;
+    }
+}
+
+/* Enhanced active states for touch devices */
+@media (max-width: 768px) {
+    .stOptionMenu .nav-link:active {
+        transform: scale(0.95) !important;
+        background: var(--gradient-primary) !important;
+        color: white !important;
+    }
+}
+
+/* Navbar scroll handling for mobile */
+.stOptionMenu {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+.stOptionMenu::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Enhanced responsive padding for main content with navbar */
+@media (max-width: 1200px) {
+    .main .block-container {
+        padding-top: 110px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .main .block-container {
+        padding-top: 100px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main .block-container {
+        padding-top: 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .main .block-container {
+        padding-top: 10px !important;
+    }
+}
+
 /* ====== Propalytic Theme Toggle ====== */
 .theme-toggle {
     padding: var(--space-sm);
